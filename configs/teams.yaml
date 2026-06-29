@@ -1,0 +1,24 @@
+teams:
+  - team_id: team-alpha
+    api_key: gw-alpha-key-001
+    allowed_models:
+      - gpt-4o
+      - gpt-4o-mini
+      - claude-sonnet-4-6
+    requests_per_minute: 60
+    tokens_per_minute: 100000
+    monthly_budget_usd: 50.00
+    system_prompt_prefix: "You are a helpful assistant for Team Alpha."
+    compliance_suffix: "Always cite your sources."
+    content_filter_enabled: true
+
+  - team_id: team-beta
+    api_key: gw-beta-key-002
+    allowed_models:
+      - gpt-4o-mini
+      - claude-haiku-4-5
+      - llama3
+    requests_per_minute: 30
+    tokens_per_minute: 50000
+    monthly_budget_usd: 20.00
+    content_filter_enabled: false
